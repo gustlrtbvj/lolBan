@@ -7,7 +7,7 @@ import { combineReducers, createStore } from "redux";
 import { Routes, Route } from "react-router";
 
 function App() {
-  const [loginUser, setLoginUser] = useState({ name: "kevin", age: 28 });
+  const [loginUser] = useState({ name: "kevin", age: 28 });
 
   const loginUserReducer = (state = loginUser, action) => {
     const param = action.payload;
